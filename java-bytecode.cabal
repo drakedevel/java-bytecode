@@ -1,0 +1,32 @@
+Name: java-bytecode
+Version: 0.1
+Author: Andrew Drake
+Copyright: (c) 2011 Andrew Drake
+Maintainer: adrake@adrake.org
+Version: 0.1
+Synopsis: Java class file and bytecode manipulation library.
+Stability: unstable
+
+License: BSD3
+License-file: LICENSE
+
+Description: TODO
+
+Category: Language
+Build-type: Simple
+
+Extra-source-files: README
+Cabal-version: >=1.6
+
+Source-Repository head
+  Type: git
+  Location: git://github.com/drakedevel/java-bytecode.git
+
+Library
+  Exposed-modules: Language.JavaBytecode
+  Build-depends:
+    attoparsec >= 0.8.5.0,
+    attoparsec-binary >= 0.1,
+    base >= 3 && < 5,
+    bytestring >= 0.9.1.10
+  GHC-Options: -Wall
